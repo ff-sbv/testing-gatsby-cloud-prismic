@@ -45,7 +45,7 @@ export const query = graphql`
 
 export default withPrismicPreview(PageTemplate, [
   {
-    repositoryName: 'testing-gatsby-cloud-with',
+    repositoryName: process.env.PRISMIC_REPO_NAME,
     linkResolver,
   },
 ])

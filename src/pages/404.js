@@ -18,7 +18,7 @@ export default withPrismicUnpublishedPreview(
   NotFoundPage,
   [
     {
-      repositoryName: 'testing-gatsby-cloud-with',
+      repositoryName: process.env.PRISMIC_REPO_NAME,
       linkResolver,
       componentResolver: componentResolverFromMap({
         homepage: HomeTemplate,

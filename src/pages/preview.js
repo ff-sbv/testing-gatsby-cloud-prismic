@@ -14,7 +14,7 @@ const PreviewPage = () => {
 
 export default withPrismicPreviewResolver(PreviewPage, [
   {
-    repositoryName: 'testing-gatsby-cloud-with',
+    repositoryName: process.env.PRISMIC_REPO_NAME,
     linkResolver,
   },
 ])
