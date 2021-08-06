@@ -13,13 +13,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-prismic-previews',
       options: {
-        repositoryName: process.env.PRISMIC_REPO_NAME,
+        repositoryName: 'testing-gatsby-cloud-with',
       },
     },
     {
       resolve: 'gatsby-source-prismic',
       options: {
-        repositoryName: process.env.PRISMIC_REPO_NAME,
+        repositoryName: 'testing-gatsby-cloud-with',
         linkResolver: require('./src/utils/LinkResolver').linkResolver,
         schemas: {
           homepage: require('./custom_types/homepage.json'),
